@@ -72,6 +72,7 @@
         width: 20px;
         height: 20px;
         
+    }
 }
 @media (max-width: 425px){
     #page-home header a span{
