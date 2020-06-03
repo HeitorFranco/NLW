@@ -34,3 +34,44 @@
         font-size: 20px;
     }
 }
+@media (max-height: 800px){
+    #page-home main h1{
+        font-size: 40px;
+    }
+    #page-home main p{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    #page-home header
+    {
+        margin-top: 25px;
+    }
+
+    #page-home main a{
+        width: 100%;
+        max-width: 300px;
+        height: 60px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+    
+        font-size: 13px;
+        margin-top: 20px;
+        background: var(--primary-color);
+    
+        transition: 400ms;
+        color: white;
+    }
+    #page-home main a span{
+        width: 60px;
+        height: 60px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    #page-home header a span{
+        width: 30px;
+        height: 20px;
+    }
+    #page-home header a{
+    }
+}
