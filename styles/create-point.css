@@ -37,7 +37,7 @@ form {
 
     border-radius: 8px;
 
-    max-width: 600px;
+    max-width: 700px;
 }
 
 
@@ -136,9 +136,11 @@ form button:hover{
     justify-content: space-between;
     text-align: center;
     cursor: pointer;
+
+    /*box-sizing: border-box;*/
 }
 
-.itens-grid li span{
+.itens-grid li span{ 
     margin-top: 12px;
 
     flex: 1;

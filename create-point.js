@@ -52,43 +52,51 @@ document
     .addEventListener("change", getcities)
 
 
-    // itens de coleta
-    const itemsToCollect = document.querySelectorAll(".itens-grid li")
+// itens de coleta
+const itemsToCollect = document.querySelectorAll(".itens-grid li")
+
+for (const item of itemsToCollect) {
+    item.addEventListener("click", handleSelectedItem)
+}
+
+const collectedItems = document.querySelector("input[name=items]")
+
+
+const collectedItens = document.querySelector("input[name=itens]");
+
+
+let selectedItems = []
+
+function handleSelectedItem(event) {
+    const itemLi = event.target
+
+    //adicionar ou remover uma class com js
+    itemLi.classList.toggle("selected")
     
-    for (const item of itemsToCollect) {
-        item.addEventListener("click", handleSelectedItem)
-    }
 
-    const collectedItems = document.querySelector("input[name=items]")
+    const itemId = itemLi.dataset.id
 
-    let selectedItems = []
+    
 
-    function handleSelectedItem(event) {
-        console.log("fhyoiba")
-        const itemLi = event.target
+    //verificar se existem itens selecionados
+    //se sim, pegar os itens selecionados
 
-        //adicionar ou remover uma class com js
-        itemLi.classList.toggle("selected")
-        
+    const alreadySelected = selectedItems.findIndex( item => {
+        const itemFound = item == itemId //isso será true ou false
+        return itemFound
+    })
 
-        const itemId = eventLi.dataset.id
-
-        
-
-        //verificar se existem itens selecionados
-        //se sim, pegar os itens selecionados
-
-        const alreadySelected = selectedItems.findIndex( item => {
-            const itemFound = item == itemId //isso será true ou false
-            return itemFound
+    //se já estiver selecionado,
+    if(alreadySelected >= 0) {
+        //tirar da seleçõa
+        const filteredItems = selectedItems.filter( item => {
+            const itemsIsDifferent = item != itemId  //false
+            return itemsIsDifferent
         })
-
-        //se já estiver selecionado,
-        if(alreadySelected >= 0) {
-            //tirar da seleçõa
-            const filteredItems = selectedItems.filter( item => {
-                const itemsIsDifferent = item != itemId  //false
-                return itemsIsDifferent
-            })
-        } 
+        selectedItems = filteredItems
+    } else{
+        selectedItems.push(itemId)
     }
+
+    collectedItems.value = selectedItems
+}
