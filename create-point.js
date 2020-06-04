@@ -90,7 +90,5 @@ document
                 const itemsIsDifferent = item != itemId  //false
                 return itemsIsDifferent
             })
-            
-
         } 
     }
