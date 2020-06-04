@@ -153,5 +153,5 @@ form button:hover{
 }
 .itens-grid li img,
 .itens-grid li span{
-    
+    pointer-events: none;
 }

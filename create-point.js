@@ -53,7 +53,7 @@ document
 
 
     // itens de coleta
-    const itemsToCollect = document.querySelectorAll(".items-grid li")
+    const itemsToCollect = document.querySelectorAll(".itens-grid li")
     
     for (const item of itemsToCollect) {
         item.addEventListener("click", handleSelectedItem)
@@ -64,6 +64,7 @@ document
     let selectedItems = []
 
     function handleSelectedItem(event) {
+        console.log("fhyoiba")
         const itemLi = event.target
 
         //adicionar ou remover uma class com js
@@ -89,6 +90,7 @@ document
                 const itemsIsDifferent = item != itemId  //false
                 return itemsIsDifferent
             })
+            
 
         } 
     }
