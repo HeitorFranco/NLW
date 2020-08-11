@@ -8,7 +8,7 @@ function pageCreatePoint(req, res){
 }
 function pageSearchResults(req, res){
    
-    point.findAll().then((cards) => {
+    point.findAll({where: {cidade: req.query.search}}).then((cards) => {
         const itens = ["Lâmpadas", "Pilhas e Baterias", "Papéis e Papelão", "Resíduos Eletrônicos", "Resíduos Orgânicos", "Óleo de Cozinha"]
         for(let card of cards){
             card.itensdecoleta = String(card.itensdecoleta).split(",")

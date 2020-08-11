@@ -1,6 +1,6 @@
 @media (max-width: 900px){
     #page-home{
-        background-position-x: 70vw;
+        background-image: none;
     }
     #page-home .content{
         align-items: center;

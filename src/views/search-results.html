@@ -35,14 +35,21 @@
                             <h3>{{item}}</h3>
                         {%endfor%}
                         <p>
-                            Rio do Sul, Santa Catarina <br/>
-                            Guilherme Gembala, Jardim América <br/>
-                            Nº 260
+                            {{card.cidade}}, {{card.estado}} <br/>
+                            {{card.endereço}} <br/>
+                            Nº {{card.numero}} 
                         </p>
                     </div>
                     {%endfor%}
                 </div>
             </main>
         </div>
+        <script>
+            const cards = document.querySelector(".cards")
+            var rows = document.querySelectorAll("h1").length
+            if(rows == 1){cards.style.gridTemplateRows = `repeat(1fr)`;}
+            else{cards.style.gridTemplateRows = `repeat(${Math.round(rows/2.5)}, 1fr)`;}
+            
+        </script>
     </body>
 </html>
