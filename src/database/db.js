@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize").Sequelize
 
 
-const sequelize = new Sequelize('pontosdecoleta', 'root', '123456', {
+const sequelize = new Sequelize('db_ecoleta', 'heitormaf', 'y9#qjjS4KF3sSD2', {
     host: 'localhost',
     dialect: 'mysql'
 });
