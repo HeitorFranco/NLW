@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/HeitorFranco/NLW/issues"
   },
-  "homepage": "https://github.com/HeitorFranco/NLW#readme"
+  "homepage": "https://github.com/HeitorFranco/NLW#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "nunjucks": "^3.2.2",
+    "sequelize": "^6.3.4"
+  }
 }
