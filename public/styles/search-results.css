@@ -69,6 +69,7 @@ main .card h1{
     color: #322153;
 }
 main .card h3{
+    display: inline;
     margin: 24px 0;
     font-family: Roboto;
     font-weight: bold;

@@ -69,7 +69,7 @@ let selectedItems = []
 
 function handleSelectedItem(event) {
     const itemLi = event.target
-
+    
     //adicionar ou remover uma class com js
     itemLi.classList.toggle("selected")
     
@@ -93,6 +93,7 @@ function handleSelectedItem(event) {
             const itemsIsDifferent = item != itemId  //false
             return itemsIsDifferent
         })
+        
         selectedItems = filteredItems
     } else{
         selectedItems.push(itemId)
