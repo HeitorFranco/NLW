@@ -1,0 +1,44 @@
+@media(max-width: 750px){
+    #page-create-point{
+        width: 100vw;
+        margin: 0;
+        max-width: none;
+    }
+
+    header{
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    header img{
+        margin-bottom: 30px;
+    }
+
+    
+    fieldset .field-group{
+        flex-direction: column;
+    }
+    form{
+        margin-top: 60px;
+    }
+    form .field-group .field + .field {
+        margin: 0;
+        margin-bottom: 24px;
+    }
+    .itens-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .btn-create{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    
+    }
+
+}
+@media(max-width: 500px){
+    .itens-grid{
+        grid-template-columns: 1fr;
+    }
+    
+    
+}

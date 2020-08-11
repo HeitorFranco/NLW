@@ -1,3 +1,5 @@
+
+
 @media (max-width: 900px){
     #page-home{
         background-image: none;
@@ -41,12 +43,12 @@
         font-size: 20px;
     }
 }
-@media (max-height: 800px){
+@media (max-width: 550px){
     #page-home main h1{
         font-size: 40px;
     }
     #page-home main p{
-        font-size: 15px;
+        font-size: 16px;
         margin-top: 20px;
     }
     #page-home header
@@ -78,12 +80,29 @@
     #page-home header a span{
         width: 20px;
         height: 20px;
-        
     }
+
+    #modal .header h1{
+        font-size: 35px;
+    }
+    #modal .search input{
+        padding: 0 20px;
+    }
+    #modal .search input ~ button{
+        height: 60px;
+        width: 60px;
+    }
+
 }
 @media (max-width: 425px){
     #page-home header a span{
         width: 25px;
         height: 20px;
+    }
+}
+
+@media (max-width: 330px){
+    #page-home main h1{
+        font-size: 30px;
     }
 }
