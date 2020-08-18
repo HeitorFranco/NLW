@@ -1,8 +1,8 @@
 const Sequelize = require("sequelize").Sequelize
 
 
-const sequelize = new Sequelize('db_ecoleta', 'heitormaf', 'y9#qjjS4KF3sSD2', {
-    host: 'mysql669.umbler.com',
+const sequelize = new Sequelize('bj58a7x5z8rj8pvtvclt', 'uzlp7o19m5p6fk5b', '3gJdFKbz3tw0BlU2rFy3', {
+    host: 'bj58a7x5z8rj8pvtvclt-mysql.services.clever-cloud.com',
     dialect: 'mysql'
 });
 /*const sequelize = new Sequelize('pontosdecoleta', 'root', '123456', {
@@ -10,7 +10,6 @@ const sequelize = new Sequelize('db_ecoleta', 'heitormaf', 'y9#qjjS4KF3sSD2', {
     dialect: 'mysql'
 });*/
 async function testConection() {
-    
     try {
         await sequelize.authenticate();
         console.log('Connection has been established successfully.');
