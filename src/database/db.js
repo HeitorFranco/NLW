@@ -1,8 +1,8 @@
 const Sequelize = require("sequelize").Sequelize
 
 
-const sequelize = new Sequelize('bj58a7x5z8rj8pvtvclt', 'uzlp7o19m5p6fk5b', '3gJdFKbz3tw0BlU2rFy3', {
-    host: 'bj58a7x5z8rj8pvtvclt-mysql.services.clever-cloud.com',
+const sequelize = new Sequelize('bwamu85fha8xxuasmoav', 'u0ge2s4wc4aag1hr', 'T6jlA3lG0RKdUdIaMlm2', {
+    host: 'bwamu85fha8xxuasmoav-mysql.services.clever-cloud.com',
     dialect: 'mysql'
 });
 /*const sequelize = new Sequelize('pontosdecoleta', 'root', '123456', {
