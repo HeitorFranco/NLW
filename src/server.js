@@ -17,4 +17,4 @@ server
 .get("/create-point", pageCreatePoint)
 .post("/add", pageRegisterPoint)
 .get("/search-results", pageSearchResults)
-.listen(3000, () => console.log("server rodando em http://localhost:3000"))
+.listen(8080, () => console.log("server rodando em http://localhost:8080"))
