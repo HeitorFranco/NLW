@@ -3,7 +3,7 @@ const server = express()
 const { pageHome, pageCreatePoint, pageSearchResults, pageRegisterPoint, pagePoint } = require("./pages")
 
 const nunjucks = require("nunjucks")
-
+const PORT = process.env.PORT || 5000
 nunjucks.configure("src/views", {
     express: server,
     noCache: true
@@ -17,4 +17,4 @@ server
 .get("/create-point", pageCreatePoint)
 .post("/add", pageRegisterPoint)
 .get("/search-results", pageSearchResults)
-.listen(5000, () => console.log("server rodando em http://localhost:5000"))
+.listen(PORT, () => console.log(`server rodando em http://localhost:${PORT}`))
