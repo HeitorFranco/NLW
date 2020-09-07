@@ -38,8 +38,6 @@ function pageSearchResults(req, res){
             res.render("search-results.html", {cards})
         }).catch((error) => console.log(error))
     }
-
-    
 }
 
 function pageRegisterPoint(req, res) {
@@ -50,6 +48,7 @@ function pageRegisterPoint(req, res) {
         numero: body.address2,
         estado:  body.state,
         cidade: body.city,
+        foto: body.picture,
         itensdecoleta: body.items
     })
     return res.redirect("/")

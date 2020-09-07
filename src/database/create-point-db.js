@@ -17,6 +17,9 @@ const point = sequelize.define("pontos", {
     cidade: {
         type: Sequelize.STRING
     },
+    foto: {
+        type: Sequelize.TEXT
+    },
     itensdecoleta: {
         type: Sequelize.STRING
     }
